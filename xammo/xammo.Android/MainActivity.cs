@@ -3,7 +3,7 @@
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
-
+using Android.Widget;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
@@ -19,6 +19,7 @@ namespace Xammo.Droid
 			Forms.Init (this, bundle);
 			LoadApplication (new App ());
 		}
+        
 	}
 }
 

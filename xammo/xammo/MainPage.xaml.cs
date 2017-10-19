@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Android.Widget;
 using Xamarin.Forms;
+using Xammo.Droid;
 
 namespace Xammo
 {
@@ -14,7 +16,8 @@ namespace Xammo
 
 	    private void Button_OnClicked(object sender, EventArgs e)
 	    {
-	        Navigation.PushAsync(new OtherPage());
+	        Toast.MakeText(Forms.Context, "This is a toast message!", ToastLength.Short);
+            Navigation.PushAsync(new OtherPage());
 	    }
 	}
 }
