@@ -16,7 +16,7 @@ namespace Xammo
 
 	    private void Button_OnClicked(object sender, EventArgs e)
 	    {
-	        Toast.MakeText(Forms.Context, "This is a toast message!", ToastLength.Short);
+	        Toast.MakeText(Forms.Context, "This is a toast message!", ToastLength.Short).Show();
             Navigation.PushAsync(new OtherPage());
 	    }
 	}
